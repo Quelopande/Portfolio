@@ -5,8 +5,7 @@
 * Copyright ©Quelopande 2023 Alright reserved
 
 */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&?family=Pacifico&family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 html{
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
@@ -14,12 +13,6 @@ html{
 body{
     background-color: #131313;
     margin-bottom: -15px;
-}
-.title{
-    text-align: center;
-    color: white;
-    font-size: 50px;
-    font-weight: 100;
 }
 .center{
     margin-left: 50px;
@@ -31,7 +24,7 @@ body{
     flex-direction: row;
     width: 100%;
     background: #252525;
-    border-radius: 25px;
+    border-radius: 205px;
     height: 80px;
 }
 .computer-vr nav img{
@@ -133,148 +126,67 @@ body{
     right: 90px;
     top: 35px;
 }
-.box{
-    background-color: #2b2b2b;
-    margin-left: 20px;
-    margin-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 10px;
-    border-radius: 10px;
-}
-.box i{
-    font-size: 25px;
-}
 /* hero */
 .hero{
-    margin-top: 15vh !important;
-    margin-bottom: 30vh !important;
+    font-family: "Funnel Display", sans-serif;
+    border-radius: 56px;
+    margin-top: -10vh !important;
     display: flex;
     flex-direction: column;
     text-align: center;
 }
+.hero div{
+    display: flex;
+}
 .hero h1{
-    font-size: 4.5rem;
+    font-size: 100px;
+    background-color: #1e1e1e;
+    padding: 10px;
     color: white;
 }
 .hero span{
     color: rgb(255, 74, 74);
 }
-.hero h4{
+.hero div h2 {
+    padding: 10px;
+    background-color: #1e1e1e;
     color: #c2c2c2;
-    margin-bottom: 30px;
-    font-size: 1.5rem;
-    margin-top: -10px !important;
-}
-.buttons{
-    display: flex;
-    align-self: center;
-}
-.button{
+    margin-top: -55px;
+    font-size: 40px;
+    width: calc(100% - 100px); /* Coincide con el margen de .center (50px a cada lado) */
     text-align: center;
-    color: #000000;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 17px;
-    width: 400px;
-    padding: 9px 0 9px 0;
-    margin-top: 20px;
-    margin-right: 20px;
-}
-.buttons > .button:nth-child(1){
-    display: block;
-    background-color: #ffffff;
-    box-shadow: 0.5px 6px 0 #a0a0a0;
-}
-.buttons > .button:nth-child(1):hover{
-    background-color: #e7e7e7;
-}
-.buttons > .button:nth-child(1):active{
-    box-shadow: 0 0 0;
-}
-.buttons > .button:nth-child(2){
-    display: block;
-    background-color: #ffffff;
-    box-shadow: 0.5px 6px 0 #a0a0a0;
-}
-.buttons > .button:nth-child(2):hover{
-    background-color: #e7e7e7;
-}
-.buttons > .button:nth-child(2):active{
-    box-shadow: 0 0 0;
-}
-/* Cards Projects*/
-.projects .project{
-    border: solid #ffffff;
-    border-radius: 16px;
-    margin-bottom: 30px;
-    transition: 400ms ease-in-out;
-}
-.projects .project:hover{
-    transform: translateY(-5px);
-    background-color: #ffffff;
-    cursor: pointer;
-    filter: drop-shadow(5px 5px 0px #ad0000) drop-shadow(5px 5px 0px #fe2424) drop-shadow(5px 5px 0px #ff5f5f);
-}
-.projects .project:hover a{
-    color: #000;
-}
-.projects .project a{
-    text-decoration: none;
-    color: #ffffff;
-}
-.projects .project h2{
-    margin-left: 20px;
-}
-.projects .project p{
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.projects .project i{
-    display: flex;
-    font-size: 20px;
-    position: absolute;
-    margin-top: 10px;
-}
-/* About Me */
-.about  h1{
-    text-align: center;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
 }
 .about{
     color: white;
-    margin-top: 120px;
+    background-color: #1e1e1e;
+    padding: 20px 40px;
+    margin-top: 10px;
 }
 .about p{
-    margin-top: 40px;
+    margin-top: -10px;
 }
 .about span{
     color: #95ff87;
     font-weight: 600;
 }
+.about h1{
+    font-family: "Funnel Display", sans-serif;
+    color: white;
+}
 /* Skills */
 .skills{
-    color: white;
-    margin-top: 100px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    margin-top: -20px;
+    margin-left: 40px;
 }
-.skills ul{
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(0, 250px));
-    margin-left: -40px;
-}
-.skills li:hover{
-    cursor: pointer;
-    border: solid 2px #676767;
-}
-.skills li{
-    font-size: 17px;
+.skills .skill{
+    margin-left: 10px;
+    width: 25%;
+    padding: 20px;
     text-align: center;
-    background-color: rgba(154, 154, 154, 0.042);
-    padding: 20px 0 20px 0;
-    border: solid 2px #363636;
-    border-radius: 10px;
-    margin-right: 20px;
-    margin-top: 20px;
+    font-size: 20px;
 }
  /* Bottom*/
  #bottom{
@@ -340,26 +252,23 @@ body{
 /* Contact */
 .contact-content{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     color: white;
-    background-color: #2b2b2b;
-    border-radius: 5px;
-    margin-top: 100px;
+    background-color: #1e1e1e;
+    margin-top: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-left: 15px;
-    margin-right: 15px;
 }
 .contact-content .form {
     width: 90%;
-    margin: auto;
+    margin-left: 50px ;
 }
 .contact-content .name, .email{
     height: 30px;
 }
 .contact-content .name, .email, .message {
-    border-radius: 7px;
+    border-radius: 20px;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     margin-top: 10px;
@@ -370,32 +279,38 @@ body{
 }
 .contact-content .name:focus, .email:focus, .message:focus{
     border: 2px solid #ffffff;
-
-}
-.contact-content label{
-    text-align: center;
-    display: block;
-    margin-top: 30px;
-    margin-bottom: 10px;
 }
 .contact-content .submit{
-    background-color: #ae0000;
-    border-radius: 17px;
+    background-color: rgb(0, 68, 226);
+    border-radius: 100px;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     color: #ffffff;
-    margin-top: 50px;
+    margin-top: 30px;
     padding: 10px;
     border: none;
-    box-shadow: 0.5px 6px 0 #ff2d2d;
-
-}
-.contact-content .submit:hover{
-    background-color: #9c0000;
+    box-shadow: 0px 0px 50px -10px rgb(0, 68, 226);
     cursor: pointer;
 }
-.contact-content .submit:active{
-    box-shadow: 0 0 0 0;
+.contact-content .box{
+    border-radius: 0px 100px 100px 0px;
+    height: 600px!important;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    width: 70%;
+    background-color: rgb(0, 68, 226);
+    border: none;
+}
+.contact-content .box h1{
+    font-size: 70px;
+}
+.contact-content .box h3{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.69);
+}
+.contact-content .box .centry{
+    margin-left: 40px;
+    margin-right: 40px;
 }
 #aa{
     opacity: 0;
@@ -423,23 +338,23 @@ textarea {
 @media (max-width: 1000px) {
     div.computer-vr{display: none;}
     div.mobile-vr{display: flex;}
-    .center{margin-top: 250px; margin-left: 50px; margin-right: 50px;}
-    .buttons{flex-direction: column; width: 100%;}
-    .button{width: 100%;}
-    svg{
-        display: none;
-    }
-    .articles{margin-top: 100px;}
-    .projects{margin-top: 100px;}
+    .hero{margin-top: 2vh !important;}
+    svg{display: none;}
+    .hero h1{font-size: 70px;}
+    .hero div{margin-top: 15px;}
+}
+@media (max-width: 800px) {
+    .hero div{flex-direction: column;margin-top: -5px !important;}
+    .hero div h2:nth-child(1){margin-top: -32px;}
+    .hero div h2:nth-child(2){margin-left: 0px !important;margin-top: -17px;}
+    .hero div h2 {font-size: 32px;margin-top: 0px;width: 100%;}
+    .box{display: none;}
 }
 @media (max-width: 600px) {
-    .center{
-        margin-left: 15px;
-        margin-right: 15px;
-        margin-top: 120px;
-    }
-    .hero h1{font-size: 3rem;}
-    .hero span{color: rgb(255, 74, 74);}
-    .hero h4{font-size: 1.15rem;}
-    #bottom{display: block;}
+    .hero h1{font-size: 40px;}
+    .hero div h2:nth-child(1){margin-top: -12px;}
+    .center {margin-left: 10px;margin-right: 10px;}
+    .skills {margin-top: 10px;margin-left: 0;flex-direction: column;align-items: center;}
+    .skill {margin-top: 10px;width: 87%!important;}
+    .skill:nth-child(1){margin-top: -25px;}
 }
